@@ -10,8 +10,8 @@
   </head>
 <body>
   <!-- Шапка сайта -->
-  <header class = "container">
-    <nav class = "main-nav">
+  <header >
+    <nav  class = "container main-nav">
       <a href="./index.html">
         <p class = "logo" ><span class="web"> Web </span> Studio</p>
       </a>
@@ -32,35 +32,36 @@
       <section class="hero">
         <!-- Поставить фон -->
         <h1 class="title">Эффективные решения <br> для вашего бизнеса</h1>
-        <a class="button" >Заказать услугу</a>
+        <a href="" class="button" >Заказать услугу</a>
         
       </section>
       
-
+      <!-- Преимущества -->
       <section>
         <div class="container">
           <!-- Нужно скрыть в СSS -->
           <h2 hidden class="title">Ключевые оссобенности</h2>
             <!-- Картинки поставлены временно -->
           
-          <ul class=features>
+          <ul class="features">
             <li class="list">
-              <img src="./img/antenna.png" alt="антена">
+
+              <div class="img-features"><img src="./img/antenna.png" alt="антена"></div>
             <h3 class="bullet-points"> Внимание к деталям </h3>
               <p class="description">Идейные соображения, а также начало повседневной работы по формированию позиции.</p>
             </li>
             <li class="list">
-              <img src="./img/clock.png" alt="часы">
+              <div class="img-features"><img src="./img/clock.png" alt="часы"></div>
               <h3 class="bullet-points">Пунктуальность </h3>
               <p class="description" >Задача организации, в особенности же рамки и место обучения кадров влечет за собой.</p>
             </li>
             <li class="list">
-              <img src="./img/diagram.png" alt="диаграмма">
+              <div class="img-features"><img src="./img/diagram.png" alt="диаграмма"></div>
               <h3 class="bullet-points">Планирование</h3>
               <p class="description" >Равным образом консультация с широким активом в значительной степени обуславливает.</p>
             </li>
             <li class="list">
-              <img src="./img/astronaut.png" alt="астронавт">
+              <div class="img-features"><img src="./img/astronaut.png" alt="астронавт"></div>
               <h3 class="bullet-points">Современные технологии</h3>
               <p class="description" >Значимость этих проблем настолько очевидна, что реализация плановых заданий.</p>
             </li>
@@ -72,15 +73,15 @@
         <div class="container">
           <h2 class="title what-we-do">Чем мы занимаемся</h2>
           <ul class="list-works">
-            <li>
+            <li class="what-we-do_list">
               <img src="./img/desctop-apps.png" alt="десктопные-приложения" width="370" >
               <h3 class = "what-we-do" >Десктопные приложения</h3>
             </li>
-            <li> 
+            <li class="what-we-do_list"> 
               <img src="./img/mobile-apps.png" alt="мобильные-приложения" width="370">
               <h3 class = "what-we-do" >Мобильные приложения</h3> 
             </li>
-            <li> 
+            <li class="what-we-do_list"> 
               <img src="./img/design-solutions.png" alt="дизайнерские решения" width="370">
               <h3 class = "what-we-do" >Дизайнерские решения</h3> 
             </li>
@@ -89,58 +90,60 @@
         
       </section>
         <!-- Команда -->
-      <section>
-        <h2 class="title team">Наша команда</h2>
+      
+        <div class="container">
+          <h2 class="title team">Наша команда</h2>
         <ul class = "list-team">
           <li>
-            <img src="./img/Nicolay.jpg" alt="Николай-Кучеренко" width="270" >
-            <h3 class="name">Николай кучеренко</h3>
+            <img class="img-team" src="./img/Nicolay.jpg" alt="Николай-Кучеренко" width="270" >
+            <h3 class="name">Николай Кучеренко</h3>
             <p class="profession">Product Designer</p>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+            <ul class="social-networks">
+              <li>inst</li>
+              <li>tw</li>
+              <li>fb</li>
+              <li>in</li>
             </ul>
           </li>
           <li>
-            <img src="./img/Olga.png" alt="Ольга-Иванова" width="270">
+            <img class="img-team" src="./img/Olga.png" alt="Ольга-Иванова" width="270">
             <h3 class="name">Ольга Иванова</h3>
             <p class="profession" >Front Developer</p>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+            <ul class="social-networks">
+              <li>inst</li>
+              <li>tw</li>
+              <li>fb</li>
+              <li>in</li>
             </ul>
           </li>
           <li>
-            <img src="./img/Andrey.png" alt="Андрей-Шевченко" width="270">
+            <img class="img-team" src="./img/Andrey.png" alt="Андрей-Шевченко" width="270">
             <h3 class="name">Андрей Шевченко</h3>
             <p class="profession" >Marketing</p>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+            <ul class="social-networks">
+              <li>inst</li>
+              <li>tw</li>
+              <li>fb</li>
+              <li>in</li>
             </ul>
           </li>
           <li>
-            <img src="./img/Ivan.png" alt="Иван-Николаев" width="270">
+            <img class="img-team" src="./img/Ivan.png" alt="Иван-Николаев" width="270">
             <h3 class="name">Иван Николаев</h3>
             <p class="profession" >UI Designer</p>
-            <ul>
-              <li></li>
-              <li></li>
-              <li></li>
-              <li></li>
+            <ul class="social-networks">
+              <li>inst</li>
+              <li>tw</li>
+              <li>fb</li>
+              <li>in</li>
             </ul>
           </li>
         </ul>
+        </div>
       </section>
 
       <section>
-        <h2 class="title">Постоянные клиенты</h2>
+        <h2 class="title clients">Постоянные клиенты</h2>
 
         <ul>
           <li><img src="#" alt=""></li>
@@ -155,7 +158,10 @@
     </main>
 
     <footer>
-      <address> <p class = "logo" ><span class="web"> Web </span>  Studio  <br></p><span class = "adress">г. Киев, пр-т Леси Украинки, 26 </span><br> <span class = "mail-phone">info@example.com <br> +38 099 111 11 11 </span></address>
+       <p class = "logo" ><span class="web"> Web </span>  Studio  <br></p>
+        <address>г. Киев, пр-т Леси Украинки, 26 </><br> </address> 
+        <p class = "mail-phone">info@example.com </p>
+        <p> +38 099 111 11 11 </p>
         <b class = "join">Присоединяйтесь</b>
         <ul>
           <li><a href="" aria-label="Ccылка на Instagram"></a></li>

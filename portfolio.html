@@ -10,32 +10,36 @@
 </head>
 <body>
   <!-- Шапка сайта -->
-  <header>
-    <nav>
-      <a href="">
+  <header >
+    <nav  class = "container main-nav">
+      <a href="./index.html">
         <p class = "logo" ><span class="web"> Web </span> Studio</p>
       </a>
       <ul class = "navigation">
-        <li><a class="navigation-link" href="./index.html">Cтудия</a> </li>
-        <li><a class="navigation-link current" href="./portfolio.html">Портфолио</a></li>
-        <li><a class="navigation-link" href="">Контакты</a></li>
+        <li><a class="navigation-link current list" href="./index.html">Cтудия</a> </li>
+        <li><a class="navigation-link list" href="./portfolio.html">Портфолио</a></li>
+        <li><a class="navigation-link list" href="">Контакты</a></li>
+      </ul>
+    <ul class="contacts">
+        <li class="contacts-list"><a class="link list" href="mailto:info@devstudio">info@devstudio.com</a></li>
+        <li class="contacts-list"><a class="link list" href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
     </nav>
-      <ul class="contacts">
-        <li><a class="link" href="">info@devstudio.com</a></li>
-        <li><a class="link" href="">+38 096 111 11 11</a></li>
-      </ul>
   </header>
-   
-    <ul class = "main-menu">
-      <li><button class="button" type="button">Все</button> </li>
-      <li><button class="button" type="button">Веб-сайты</button></li>
-      <li><button class="button" type="button">Приложения</button></li>
-      <li><button class="button" type="button">Дизайн</button></li>
-      <li><button class="button" type="button">Маркетинг</button></li>
-    </ul>
   <main>
+    <!-- Фильтр-навигация -->
+    <div class="container">
+    <ul class = "main-menu">
+      <li><button class="button menu" type="button">Все</button> </li>
+      <li><button class="button menu" type="button">Веб-сайты</button></li>
+      <li><button class="button menu" type="button">Приложения</button></li>
+      <li><button class="button menu" ty-main-menupe="button">Дизайн</button></li>
+      <li><button class="button menu" type="button">Маркетинг</button></li>
+    </ul>
+  </div>
+
     <section>
+      <div class="container">
       <!-- Спрятать заголовок -->
       <h1 class="title">Все работы</h1>
       <ul>
@@ -102,22 +106,26 @@
         </a>
         </li>
       </ul>
+    </div>
     </section>
   
   </main>
 
   <footer>
-    <address> <p class = "logo" ><span class="web"> Web </span>  Studio  <br></p><span class = "adress">г. Киев, пр-т Леси Украинки, 26 </span><br> <span class = "mail-phone">info@example.com <br> +38 099 111 11 11 </span></address>
-      <b class = "join">Присоединяйтесь</b>
-      <ul>
-        <li><a href="" aria-label="Ccылка на Instagram"></a></li>
-        <li><a href="" aria-label="Ccылка на Twitter"></a></li>
-        <li><a href="" aria-label="Ccылка на Facebook"></a></li>
-        <li><a href="" aria-label="Ccылка на LinkedIn"></a></li>
-      </ul>
-      <b class = "subscribe"> Подпишитесь на рассылку</b>
-      <!-- Сделать форму -->
-  </footer>
+    <p class = "logo" ><span class="web"> Web </span>  Studio  <br></p>
+     <address>г. Киев, пр-т Леси Украинки, 26 </><br> </address> 
+     <p class = "mail-phone">info@example.com </p>
+     <p> +38 099 111 11 11 </p>
+     <b class = "join">Присоединяйтесь</b>
+     <ul>
+       <li><a href="" aria-label="Ccылка на Instagram"></a></li>
+       <li><a href="" aria-label="Ccылка на Twitter"></a></li>
+       <li><a href="" aria-label="Ссылка на Facebook"></a></li>
+       <li><a href="" aria-label="Ссылка на LinkedIn"></a></li>
+     </ul>
+     <b class = "subscribe"> Подпишитесь на рассылку</b>
+     <!-- Сделать форму -->
+ </footer>
   
 </body>
 </html>

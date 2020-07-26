@@ -27,7 +27,7 @@ html {
   --accent-color: #2196F3;
   --primary-white-color: #ffffff;
   --background-color: #2F303A;
-  
+  --secondary-bc: #F5F4FA;
 }
  body{
   font-family: "Roboto", sans-serif;
@@ -50,7 +50,10 @@ html {
  
 }
 
-.main-nav {
+.main-nav,
+.features,
+.list-works,
+.list-team {
   display: flex;
   align-items: center;
   justify-content: space-between ;
@@ -81,21 +84,28 @@ html {
   
   
 }
-a {
-  text-decoration: none;
-}
-li {
-  list-style-type: none;
-}
-.navigation-link.current {
-
-color: var(--accent-color);
-
-}
-
 .main-menu{
   font-size: 16px;
   font-family: "Roboto", sans-serif;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  margin-top: 116px;
+  margin-bottom: 33px;
+  
+ 
+}
+
+.main-menu .button {
+  min-width: 0px;
+  display:inline-block;
+}
+.main-menu li {
+  display: inline-block;
+  min-width: 0px;
+}
+.main-menu li:not(:last-child){
+  margin-right: 8px;
 }
 .navigation li:not(:last-child){
   margin-right: 50px;
@@ -143,6 +153,7 @@ color: var(--accent-color);
 
 .hero {
   background-color:var(--background-color);
+  text-align: center;
 }
 
 .hero .title {
@@ -158,6 +169,18 @@ color: var(--accent-color);
   padding-top: 94px;
 }
 
+
+.img-features {
+  width:270px;
+  height:120px;
+  text-align: center;
+  background-color: var(--secondary-bc);
+  align-items: center;
+}
+.img-features img {
+ padding:25px 0;
+}
+
 .works-name {
  font-size: 18px;
 }
@@ -166,29 +189,11 @@ color: var(--accent-color);
   color: var(--primary-text-color);
 }
 
-footer {
-  background-color: var(--background-color);
-}
 
-footer .logo {
-  color: white;
-}
-.adress {
-  color: var(--primary-white-color);
-}
 
-.mail-phone {
- 
-}
 
-.join {
 
-  color: var(--primary-white-color );
-}
 
-.subscribe {
-  color: var(--primary-white-color );
-}
 
 .bullet-points {
 font-weight: bold;
@@ -209,6 +214,13 @@ color: var(--title-text-color);
   
 }
 /* Работы */
+
+.what-we-do_list:not(:last-child){
+
+  margin-right:30px;
+
+}
+
 .what-we-do {
   font-weight: bold;
   color: var(--primary-white-color);
@@ -217,6 +229,8 @@ color: var(--title-text-color);
 .list-works,
 .list-team {
   margin-top:50px;
+  margin-bottom:94px;
+  
 }
 .name {
 
@@ -224,8 +238,13 @@ color: var(--title-text-color);
   font-weight: medium;
   color: var(--title-text-color);
 }
+.social-networks {
+  display: flex;
 
-
+}
+.social-networks li:not(:last-child) {
+  margin-right:10px;
+}
 
 .title
  {
@@ -236,18 +255,61 @@ color: var(--title-text-color);
   
 }
 
-.title .what-we-do,
-.title .team {
-  margin-top:94px;
-}
 
 .works-name {
   color: var(--title-text-color);
 }
 
+/* --------- Team ---------- */
+
+
+.img-team {
+  margin-bottom: 30px;
+}
+
+.name {
+  margin-bottom: 10px;
+
+  font-size: 16px;
+  font-weight: medium;
+  color: var(--title-text-color);
+}
+
+.profession {
+
+  margin-bottom: 16px;
+}
+
+/*  ----------- Footer ----------- */
+
+footer {
+  background-color: var(--background-color);
+}
+
+footer .logo {
+  color: white;
+}
+.adress {
+  color: var(--primary-white-color);
+}
+
+.join {
+
+  color: var(--primary-white-color );
+}
+
+.subscribe {
+  color: var(--primary-white-color );
+}
+
+
+
+
+
+/* ------------------------- */
 .button {
   
-  padding:10px 32px;
+  padding:10px 8px;
   min-width: 200px;
   text-align: center;
   display: inline-block;
@@ -259,7 +321,39 @@ color: var(--title-text-color);
   
   border-radius: 4px;
   border:1px solid transparent;
+}
+
+.title.what-we-do,
+.title.team,
+.title.clients {
+  margin-top:94px;
+  margin-bottom: 50px;
+}
+
+.title
+ {
+
+  font-size: 32px;
+  text-align: center;
+  color:var(--title-text-color);
+  margin-top:94px;
+  margin-bottom: 50px;
   
- 
-  
+}
+
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+.navigation-link.current {
+
+color: var(--accent-color);
+
+}
+
+.features .list:not(:last-child),
+.list-team li:not(:last-child) {
+ margin-right: 30px;
 }
