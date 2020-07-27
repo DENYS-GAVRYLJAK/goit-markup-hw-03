@@ -146,7 +146,7 @@ html {
   margin-right: 50px;
 
 }
-.navigation-link {
+.navigation-link{
   padding: 34px 0;
 
   color: var(--title-text-color);
@@ -156,10 +156,10 @@ html {
 .contacts .link:hover,
 .contacts .link:focus,
 .button:hover,
-.button:focus,  {
+.button:focus  {
 
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
+  color: var(--accent-color);
+ 
   
 }
 .contacts {
