@@ -10,6 +10,10 @@ h1,h2,h3,h4,h5,h6,ul {
   padding:0;
 }
 
+.description {
+  margin-bottom:0;
+}
+
 html {
  box-sizing: border-box;
 }
@@ -42,13 +46,17 @@ html {
 .container  {
 
   width: 1230px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding:94px 15px;
 
   margin: 0 auto;
 
   background-color: var (--background-color);
  
+}
+.container.filter,
+.container.main-nav {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 .container-footer  {
   display:flex;
@@ -200,9 +208,7 @@ html {
 
 /* Преимущества */
 
-.features {
-  padding-top: 94px;
-}
+
 
 
 .img-features {
@@ -243,10 +249,10 @@ color: var(--title-text-color);
 
 }
 
-.description {
-  margin-top: 10px;
-
+.list p {
   
+  margin-bottom:0px;
+ 
 }
 /* Работы */
 
@@ -261,12 +267,7 @@ color: var(--title-text-color);
   color: var(--primary-white-color);
   
 }
-.list-works,
-.list-team {
-  margin-top:50px;
-  margin-bottom:94px;
-  
-}
+
 .name {
 
   font-size: 16px;
@@ -361,7 +362,7 @@ footer .logo {
 .title.what-we-do,
 .title.team,
 .title.clients {
-  margin-top:94px;
+  margin-top:0;
   margin-bottom: 50px;
 }
 
@@ -371,7 +372,6 @@ footer .logo {
   font-size: 32px;
   text-align: center;
   color:var(--title-text-color);
-  margin-top:94px;
   margin-bottom: 50px;
   
 }
@@ -391,6 +391,13 @@ color: var(--accent-color);
 .features .list:not(:last-child),
 .list-team li:not(:last-child) {
  margin-right: 30px;
+}
+
+.list-works,
+.list-team {
+  margin-top:50px;
+ 
+  
 }
 
 .works-name {
